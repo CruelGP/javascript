@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição 03</title>
+</head>
+<body>
+    <h1>Saiba se você precisa votar nas eleições deste ano!</h1>
+    <label for="idade">Sua idade:</label>
+    <input type="number" name="nidade" id="idade">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+<script>
+    function verificar(){
+    var idade = window.document.querySelector('input#idade')
+    var res = window.document.querySelector('div#res')
+    var vdd = Number(idade.value)
+    res.innerHTML = (`<p>Com ${vdd} anos</p>`)
+    if (vdd < 16)
+        {res.innerHTML +=('Você ainda não <strong>VOTA</strong>')}
+    else if (vdd < 18 || vdd >= 67)
+        {res.innerHTML += ('O VOTO é opcional')}
+
+        else
+            {res.innerHTML += ('O VOTO é Obrigatório.')}
+    }
+</script>
+    
+</body>
+</html>
