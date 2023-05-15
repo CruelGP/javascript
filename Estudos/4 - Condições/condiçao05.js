@@ -1,4 +1,4 @@
-var hora = 00
+var hora = 2
 if (hora >=6 && hora < 12)
     {console.log('Bom dia!')}
 

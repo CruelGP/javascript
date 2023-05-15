@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições 04</title>
+</head>
+<body>
+    <h1>Qual o horário?</h1>
+    <label for="hora">Hora:</label>
+    <input type="number" name="nhora" id="hora">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var hora = window.document.querySelector('input#hora')
+            var res = window.document.querySelector('div#res')
+            var vdd = Number(hora.value)
+            res.innerHTML = (`<p>${vdd}</p>`)
+            if (vdd < 12)
+                {res.innerHTML += ('<p>Bom dia!</p>')}
+            else if (vdd > 17)
+                {res.innerHTML += ('<p>Boa Noite!</p>')}
+
+                else
+                {res.innerHTML += ('<p>Boa tarde!</p>')}
+        }
+    </script>
+</body>
+</html>
