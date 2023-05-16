@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condições 06</title>
+</head>
+<body>
+    <label for="dia">Que dia é hoje?</label>
+    <input type="number" name="ndia" id="dia">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+<script>
+    function verificar(){
+        var dia = window.document.querySelector('input#dia')
+        var res = window.document.querySelector('div#res')
+        var vdd = Number(dia.value)
+        var agora = new Date()
+        var dia = agora.getDay()
+        res.innerHTML = (`<p>${dia}</p>`)
+        switch(dia){
+            case 0:
+            res.innerHTML += ('Domingo')
+            break
+
+            case 1:
+            res.innerHTML += ('Segunda-Feira')
+            break
+
+            case 2:
+            res.innerHTML += ('Terça-Feira')
+            break
+
+            case 3:
+            res.innerHTML += ('Quarta-Feita')
+            break
+
+            case 4:
+            res.innerHTML += ('Quinta-Feita')
+            break
+            
+            case 5:
+            res.innerHTML += ('Sexta-Feita')
+            break
+            case 6:
+            res.innerHTML += ('Sábado')
+            break}   
+        }
+</script>
+
+</body>
+</html>
