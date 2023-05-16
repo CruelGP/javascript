@@ -1,0 +1,36 @@
+*
+{margin: 0px;
+padding: 0px;}
+
+body
+{background-color: #1b1ba8;
+font-family: Arial, Helvetica, sans-serif;}
+
+header > h1
+{color: white;
+text-align: center;
+font-size: 4em;}
+
+section
+{background-color: white;
+height: 500px;
+width: 450px; 
+margin: auto;border-radius: 10px;}
+
+div#form
+{padding: 10px;}
+
+div#form > p
+{padding: 7px;}
+
+div#res
+{padding: 10px;
+text-align: center;}
+
+div#res > img
+{border-radius: 50%;
+padding-top: 20px;}
+
+footer > h1
+{color: white;
+text-align:center;}
