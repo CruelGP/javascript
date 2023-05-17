@@ -25,6 +25,9 @@ div#res > p
 {padding: 20px;
 font-weight: bold;}
 
+textarea
+{margin: 10px;}
+
 footer > h1
 {color: white;
 text-align:center;
