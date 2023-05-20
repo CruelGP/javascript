@@ -19,7 +19,41 @@ function inLista(n, l){
 
 function adicionar(){
    if (isNumero(num.value) && !inLista(num.value, valores))
-        {valores.push(Number(num.value))}
+        {valores.push(Number(num.value))
+            var item = document.createElement('option')
+            item.text = `Valor ${num.value} adicionado.`
+            lista.appendChild(item)
+            res.innerHTML = ''
+        }
    else
-        window.alert('Valor inválio ou já encontrado na lista.')
+        {window.alert('Valor inválio ou já encontrado na lista.')}
+    
+    num.value= ''
+    num.focus()
 }
+
+function finalizar(){
+    if (valores.length == 0)
+        {window.alert('Adiciona valores antes de finalziar!')}
+    else
+        {var tot = valores.length
+         var maior = valores[0]
+         var menor = valores[0]
+         var soma = 0
+         var media = 0
+         for(var pos in valores){
+            soma += valores[pos]
+            if (valores[pos] > maior)
+            maior = valores[pos]
+            if (valores[pos] < menor)
+            menor = valores[pos]
+         }
+            media = soma/tot
+            res.innerHTML = ''
+            res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados. </p>`
+            res.innerHTML += `<p>O maior valor adicionado foi ${maior} </p>`
+            res.innerHTML += `<p>O menor valor adicionado foi ${menor} </p>`
+            res.innerHTML += `<p>A soma dos valores adicionados é ${soma}</p>`
+            res.innerHTML += `<p>A média entre os valores adicionados é ${media} </p>`
+            }
+    }

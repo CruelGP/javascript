@@ -14,9 +14,9 @@ padding: 10px;}
 
 section
 {background-color: white;
-height: 350px;
 width: 500px; 
-margin: auto;border-radius: 10px;}
+margin: auto;
+border-radius: 10px;}
 
 section > p
 {padding: 20px;
