@@ -12,3 +12,4 @@ console.log(cont)
 //Multiplica por 3: o mesmo que cont = cont *3; (nesta operação o cont tem o valor de 2.)
 cont *= 3;
 console.log(cont)
+
