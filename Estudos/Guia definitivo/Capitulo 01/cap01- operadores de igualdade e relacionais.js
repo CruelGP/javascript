@@ -30,3 +30,5 @@ console.log("tw é alfabeticamente maior do que th")
 // teste se falso é igual a uma operação falsa. falso = falso é verdadeiro
 console.log(false == (x>y))
 console.log("verdadeiro: falso é igual a falso")
+
+pag25
