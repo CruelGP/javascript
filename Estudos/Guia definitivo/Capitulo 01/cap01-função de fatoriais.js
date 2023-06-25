@@ -5,4 +5,4 @@ function factorial(n){
     n--;}
     return product;
 }
-console.log(factorial(5))
+console.log(factorial(4))
